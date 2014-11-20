@@ -76,17 +76,13 @@
         </div>
       </div>
     </div>
-    <ul>
-      "Failure is not an option.  Everyone has to Succeed." -Arnold Schwarzenegger
-    </ul>
-    <ul>
-      "Your time is limited, so don't waste it living someone else's life." -Steve Jobs
-    </ul>
-    <ul>
-      "Better Ingredients, Better Pizza" -Papa John's.
-    </ul>
-  </div>
 
+
+    <% @quotes.each do |quote| %>
+      <ul>
+        <%= quote %>
+      </ul>
+    <% end %>
 
 
 

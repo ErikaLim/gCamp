@@ -76,14 +76,19 @@
         </div>
       </div>
 
-
-        <% @quotes.each do |quote| %>
-          <% quote.each do |x| %>
-            <ul class="list-unstyled">
-              <%= x %>
-            </ul>
-          <% end %>
+         <% @quotes.each do |quote| %>
+           <p>
+             <%= quote[0] %>
+           </p>
+           <p class ="text-muted">
+             <em><%= quote[1] %></em>
+           </p>
+           <br>
         <% end %>
+
+
+
+
 
 
 

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'terms' => "pages#terms"
 
   get 'home' => "welcome#home"
+
+  get 'faqs' => "pages#faqs"
 end

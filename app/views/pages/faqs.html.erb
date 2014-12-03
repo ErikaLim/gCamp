@@ -2,12 +2,12 @@
 <br>
 <div class="row">
   <div class="col-md-8">
-    <% @questions.each do |question| %>
+    <% @faqs.each do |faq| %>
       <p>
-        <b><%= question[0] %></b>
+        <b><%= faq.question %></b>
       </p>
       <p>
-        <%= question[1] %>
+        <%= faq.answer %>
       </p>
       <br>
      <% end %>

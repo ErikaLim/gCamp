@@ -34147,3 +34147,255 @@ Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-04 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 15:28:34 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeCompletedTasks (20141204233548)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "tasks" ALTER COLUMN "completed" TYPE boolean[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "tasks" ALTER COLUMN "completed" SET DEFAULT 'f'
+  [1m[36m (0.3ms)[0m  [1mUPDATE "tasks" SET "completed"='f' WHERE "completed" IS NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "tasks" ALTER "completed" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141204233548"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-12-04 15:37:24 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-12-04 15:37:26 -0800
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iBsiiHbiu1lbcq/0SKOwKYAGyq/5jSFPaGvLj0a8sRQ=", "task"=>{"description"=>"hello"}, "commit"=>"Create Task"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tasks" ("created_at", "description", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-12-04 23:37:32.808911"], ["description", "hello"], ["updated_at", "2014-12-04 23:37:32.808911"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/tasks/8
+Completed 302 Found in 13ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/tasks/8" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered tasks/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:32 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:33 -0800
+
+
+Started GET "/tasks/8" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 15:37:59 -0800
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-12-04 15:38:01 -0800
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2014-12-04 15:38:04 -0800
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iBsiiHbiu1lbcq/0SKOwKYAGyq/5jSFPaGvLj0a8sRQ=", "task"=>{"description"=>"checkbox"}, "commit"=>"Create Task"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "description", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-12-04 23:38:09.125962"], ["description", "checkbox"], ["updated_at", "2014-12-04 23:38:09.125962"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/tasks/9
+Completed 302 Found in 10ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/tasks/9" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1  [["id", 9]]
+  Rendered tasks/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 112ms (Views: 109.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 15:38:09 -0800
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-12-04 15:38:12 -0800
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.3ms)

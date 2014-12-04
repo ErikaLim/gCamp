@@ -18,6 +18,15 @@
         <%= f.text_field :description, class: "form-control" %>
       </div>
   </div>
+
+  <% if params[:action] == "edit" %>
+      <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-11">
+          <input type="checkbox"> Active
+        </div>
+      </div>
+  <% end %>
+
   <div class="form-group">
       <div class="actions">
         <div class="col-sm-offset-1 col-sm-11">

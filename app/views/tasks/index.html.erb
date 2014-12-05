@@ -8,7 +8,7 @@
     <tr>
       <th>Description</th>
       <th>Completed</th>
-      
+      <th>Due Date</th>
 
     </tr>
   </thead>
@@ -17,6 +17,7 @@
       <tr>
         <td><%= task.description %></td>
         <td><%= task.completed %></td>
+        <td><%= task.due_date %></td>
         <td>
           <div class = "pull-right">
             <%= link_to 'Show', task, class:"btn btn-success" %>

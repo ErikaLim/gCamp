@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get 'home' => "welcome#home"
 
   get 'faqs' => "pages#faqs"
+
+  get 'tasks' => "tasks#index"
 end

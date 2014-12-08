@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :tasks
+  resources :tasks, :users
 
   root to: "welcome#home"
 
@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get 'faqs' => "pages#faqs"
 
   get 'tasks' => "tasks#index"
+
+  get 'users' => "users#index"
 end

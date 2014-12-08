@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     respond_to do |format|
       if @user.save
-        format.html {redirect_to @user, notice: 'User was successfully created.'}
+        format.html {redirect_to users_path, notice: 'User was successfully created.'}
       else
         format.html {render.new}
       end

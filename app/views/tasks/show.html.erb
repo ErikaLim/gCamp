@@ -1,9 +1,8 @@
-<p id="notice">
+<% if notice %>
   <div class="alert alert-success" role="alert">
-    <%= notice %>
+    <p id="flash"><%= notice %></p>
   </div>
-</p>
-
+<% end %>
 
 <p>
   <strong>Description:</strong>

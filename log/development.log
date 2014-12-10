@@ -75164,3 +75164,1983 @@ Processing by ProjectsController#show as HTML
   Parameters: {"id"=>"5"}
   Rendered projects/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 111ms (Views: 110.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:08:12 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:08:15 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310451106220'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:08:15 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310474215940'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/6492d36d454daa48/variables" for 127.0.0.1 at 2014-12-09 16:08:15 -0800
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:10:43 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:10:45 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310451124920'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:10:45 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310474284060'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/756b071be13e36bc/variables" for 127.0.0.1 at 2014-12-09 16:10:45 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:11:59 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310441096180'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/4398c2e784a00f22/variables" for 127.0.0.1 at 2014-12-09 16:11:59 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:13:08 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered projects/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:8:in `_app_views_projects_show_html_erb__3397797715636921521_70310441096180'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/8d3cfeedef9441c3/variables" for 127.0.0.1 at 2014-12-09 16:13:08 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:17:04 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound - Couldn't find Task with 'id'=5:
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:429:in `find_one'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.8) lib/active_record/querying.rb:3:in `find'
+   () Users/erikalim/workspace/gCamp/app/controllers/projects_controller.rb:35:in `set_project'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:143:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a493d046f9f4e014/variables" for 127.0.0.1 at 2014-12-09 16:17:04 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:17:18 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound - Couldn't find Task with 'id'=5:
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:429:in `find_one'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.8) lib/active_record/querying.rb:3:in `find'
+   () Users/erikalim/workspace/gCamp/app/controllers/projects_controller.rb:35:in `set_project'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:143:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:17:18 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound - Couldn't find Task with 'id'=5:
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:429:in `find_one'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.8) lib/active_record/querying.rb:3:in `find'
+   () Users/erikalim/workspace/gCamp/app/controllers/projects_controller.rb:35:in `set_project'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:143:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/58d77f0e526d7ccc/variables" for 127.0.0.1 at 2014-12-09 16:17:18 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:18:51 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 24ms
+
+NameError - undefined local variable or method `project' for #<#<Class:0x007fe4da784d28>:0x007fe4da77d4d8>:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:11:in `_app_views_projects_show_html_erb__3397797715636921521_70310441096180'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/485d0885ec0a572e/variables" for 127.0.0.1 at 2014-12-09 16:18:51 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 149ms (Views: 146.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:07 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 124ms (Views: 122.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:19:42 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 117ms (Views: 115.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:21:18 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 123ms (Views: 120.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:22:01 -0800
+
+
+Started GET "/projects/5/edit" for 127.0.0.1 at 2014-12-09 16:22:22 -0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered projects/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 113.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:24:43 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError - syntax error, unexpected ')', expecting keyword_end
+...btn-danger", method: :delete) );@output_buffer.safe_append='
+...                               ^:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:10:in `'
+  actionview (4.1.8) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.8) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.8) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.8) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/b256ba3e01210efb/variables" for 127.0.0.1 at 2014-12-09 16:24:44 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:25:18 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError - syntax error, unexpected ',', expecting ')'
+...fer.append=( link_to ("Delete", project_path, class:"btn btn...
+...                               ^
+/Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:10: syntax error, unexpected ',', expecting ')'
+...t_path, class:"btn btn-danger", method: :delete) );@output_b...
+...                               ^
+/Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...btn-danger", method: :delete) );@output_buffer.safe_append='
+...                               ^:
+   () Users/erikalim/workspace/gCamp/app/views/projects/show.html.erb:10:in `'
+  actionview (4.1.8) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.8) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.8) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.8) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/803f208352650711/variables" for 127.0.0.1 at 2014-12-09 16:25:18 -0800
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:10 -0800
+
+
+Started DELETE "/projects/5" for 127.0.0.1 at 2014-12-09 16:26:22 -0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iBsiiHbiu1lbcq/0SKOwKYAGyq/5jSFPaGvLj0a8sRQ=", "id"=>"5"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate - Missing template projects/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/erikalim/workspace/gCamp/app/views"
+:
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/erikalim/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/4506e6e76ca0a9fc/variables" for 127.0.0.1 at 2014-12-09 16:26:22 -0800
+
+
+Started GET "/home" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (97.4ms)
+Completed 200 OK in 212ms (Views: 211.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/picture3.jpg" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/picture2.jpg" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/picture4.jpg" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-09 16:26:29 -0800
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-12-09 16:26:31 -0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2014-12-09 16:26:36 -0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  WHERE "projects"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.3ms)

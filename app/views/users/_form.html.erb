@@ -2,7 +2,7 @@
   <% if @user.errors.any? %>
     <div class = "row">
       <div id="error_explanation", class = "alert alert-danger col-sm-offset-1 col-sm-6" role = "alert">
-        <h4><%= pluralize(@user.errors.count, "error") %> prohibited this task from being saved: </h4>
+        <h4><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved: </h4>
 
         <ul>
           <% @user.errors.full_messages.each do |message| %>

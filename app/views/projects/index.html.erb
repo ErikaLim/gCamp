@@ -22,7 +22,7 @@
   <tbody>
     <% @projects.each do |project| %>
       <tr>
-        <td><%= link_to project.name, project%>
+        <td><%= link_to project.name, project, id:"project#{project.id}-show-action"%>
       </tr>
     <% end %>
   </tbody>
